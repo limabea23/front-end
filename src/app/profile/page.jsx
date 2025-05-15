@@ -39,7 +39,7 @@ export default function Profile() {
                     </ul>            
                 </div>
 
-                <Link href="/aluno" prefetch>
+                <Link href="/alunos" prefetch>
                 <Button type="primary">Acessar minha API GET via Axios</Button>
                 </Link>
             </Flex>

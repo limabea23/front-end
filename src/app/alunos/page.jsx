@@ -5,10 +5,7 @@ import axios from "axios";
 import { Pagination, Modal, Card, Skeleton } from "antd";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
-import {
-  getSessionStorage,
-  setSessionStorage,
-} from "../../utils/sessionStorage";
+import { getSessionStorage, setSessionStorage } from "../../../utils/sessionStorage";
 import styles from "./Alunos.module.css";
 
 const HEADERS = { "x-api-key": process.env.NEXT_PUBLIC_API_KEY };
@@ -18,7 +15,7 @@ export default function Alunos() {
     alunos: [],
     loading: true,
     current: 1,
-    pageSize: 0,
+    pageSize: 5,
   });
 
   const [modalInfo, setModalInfo] = useState({
